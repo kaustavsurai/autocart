@@ -1,0 +1,20 @@
+{
+  "name": "paytmnode.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix frontend",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
